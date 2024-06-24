@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sports Buddy</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="login-container">
+    <h2>Login</h2>
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Password">
+    <button id="login-btn">Login</button>
+    <button id="register-btn">Register</button>
+  </div>
+
+  <div id="register-container" style="display: none;">
+    <h2>Register</h2>
+    <input type="email" id="register-email" placeholder="Email">
+    <input type="password" id="register-password" placeholder="Password">
+    <button id="register-submit-btn">Register</button>
+    <button id="back-to-login-btn">Back to Login</button>
+  </div>
+
+  <div id="content" style="display: none;">
+    <h2>Welcome to Sports Buddy</h2>
+    <button id="logout-btn">Logout</button>
+    <button id="add-sports-btn">Add Sports Event</button>
+    <div id="sports-container"></div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+  <script src="firebase.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
